@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bitácora Diego Salazar</title>
+
+    <style>
+
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #aec5e7;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header{
+            padding: 40px 20px;
+            background-color: rgb(154, 146, 229);
+        }
+
+        h1{
+            color: white;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+
+            text-shadow:
+                0 0 5px #3c4496,
+                0 0 10px #3c4496,
+                0 0 20px #3c4496,
+                0 0 40px #3c4496,
+                0 0 80px #3c4496;
+        }
+
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .semana{
+            background-color: white;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            margin: 25px auto;
+
+            max-width: 1200px;
+
+            text-align: left;
+
+            border-left: 5px solid #cab8aa;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+            transition: all 0.3s ease;
+
+            overflow: hidden;
+        }
+
+        .semana:hover{
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 25px rgba(38, 42, 255, 0.2);
+        }
+
+        .semana h2,
+        .semana h3,
+        .semana h4{
+            color: rgb(9, 2, 72);
+        }
+
+        .semana1{
+            width: 100%;
+        }
+
+        .pdf-viewer{
+            width: 100%;
+
+            height: 700px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin-bottom: 20px;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-semana{
+            width: 100%;
+
+            max-width: 100%;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin: 0 auto 20px auto;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 15px 50px;
+
+            border-top: 1px solid rgb(78, 70, 164);
+
+            background-color: rgb(71, 98, 144);
+            color: white;
+        }
+
+        footer img{
+            width: 100px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        footer img:hover{
+            transform: scale(1.2);
+        }
+        @media (max-width:600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            h1{
+                font-size: 1.8rem;
+            }
+            .semana{
+                padding: 20px;
+            }
+            .pdf-viewer{
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BITACORA DIEGO SALAZAR</h1>
+    </header>
+    <main>
+        <div class="semana">
+            <h1>Contenido página WEB</h1>
+            <h3>Entrada 1: Introducción</h3>
+            <div class="semana1">
+                <iframe src="Arduino.pdf" class="pdf-viewer"></iframe>
+                <p>
+                    Esta semana aprendimos sobre arduinos.
+                </p>
+            </div>
+        </div>
+    
+        <div class="semana">
+            <h2>Circuito Arduino</h2>
+            <video class="video-semana" controls>
+                <source src="Diego Salazar.mp4" type="video/mp4">
+                
+            </video>
+            <div class="texto-semana">
+                <p>
+                    Aprendimos a aplicar sombras suaves (box-shadow)
+                    y efectos de interacción para que nuestra bitácora
+                    sea más atractiva.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>2026 @diegosalazart</span>
+
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"
+             alt="Logo del colegio">
+
+    </footer>
+
+</body>
+</html>
