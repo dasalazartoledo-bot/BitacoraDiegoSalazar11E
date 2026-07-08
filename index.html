@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+    
+       <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -8,7 +10,6 @@
     <title>Bitácora Diego Salazar</title>
 
     <style>
-
         html, body{
             height: 100%;
             margin: 0;
@@ -49,29 +50,19 @@
 
         .semana{
             background-color: white;
-
             border-radius: 15px;
-
             padding: 30px;
-
             margin: 25px auto;
-
             max-width: 1200px;
-
             text-align: left;
-
             border-left: 5px solid #cab8aa;
-
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-
             transition: all 0.3s ease;
-
             overflow: hidden;
         }
 
         .semana:hover{
             transform: translateY(-5px);
-
             box-shadow: 0 8px 25px rgba(38, 42, 255, 0.2);
         }
 
@@ -87,45 +78,40 @@
 
         .pdf-viewer{
             width: 100%;
-
             height: 700px;
-
             border: none;
-
             border-radius: 12px;
-
             display: block;
-
             margin-bottom: 20px;
-
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .video-semana{
             width: 100%;
-
             max-width: 100%;
-
             border-radius: 12px;
-
             display: block;
-
             margin: 0 auto 20px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
 
+        /* Nueva clase para que tu foto se vea genial */
+        .foto-semana{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto 20px auto;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         footer{
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
             padding: 15px 50px;
-
             border-top: 1px solid rgb(78, 70, 164);
-
             background-color: rgb(71, 98, 144);
             color: white;
         }
@@ -161,6 +147,7 @@
         <h1>BITACORA DIEGO SALAZAR</h1>
     </header>
     <main>
+        <!-- Bloque 1: PDF -->
         <div class="semana">
             <h1>Contenido página WEB</h1>
             <h3>Entrada 1: Introducción</h3>
@@ -172,11 +159,11 @@
             </div>
         </div>
     
+        <!-- Bloque 2: Video -->
         <div class="semana">
             <h2>Circuito Arduino</h2>
             <video class="video-semana" controls>
                 <source src="Diego Salazar.mp4" type="video/mp4">
-                
             </video>
             <div class="texto-semana">
                 <p>
@@ -186,13 +173,22 @@
                 </p>
             </div>
         </div>
+
+        <!-- Bloque 3: NUEVO ESPACIO PARA FOTO -->
+        <div class="semana">
+            <h2>Evidencia Fotográfica</h2>
+            <img src="Foto circuito.jpeg" alt="Foto del circuito" class="foto-semana">
+            <div class="texto-semana">
+                <p>
+                    Circuito Semana 3
+                </p>
+            </div>
+        </div>
     </main>
+    
     <footer>
         <span>2026 @diegosalazart</span>
-
-        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"
-             alt="Logo del colegio">
-
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo del colegio">
     </footer>
 
 </body>
