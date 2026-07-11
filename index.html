@@ -1,6 +1,4 @@
-
-    
-       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -106,6 +104,20 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        /* Contenedor para 2 videos lado a lado */
+        .videos-dobles{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .videos-dobles .video-semana{
+            flex: 1 1 45%;
+            min-width: 280px;
+            margin-bottom: 0;
+        }
+
         footer{
             display: flex;
             justify-content: space-between;
@@ -138,6 +150,9 @@
             }
             .pdf-viewer{
                 height: 400px;
+            }
+            .videos-dobles .video-semana{
+                flex: 1 1 100%;
             }
         }
     </style>
@@ -174,13 +189,31 @@
             </div>
         </div>
 
-        <!-- Bloque 3: NUEVO ESPACIO PARA FOTO -->
+        <!-- Bloque 3: Foto -->
         <div class="semana">
             <h2>Evidencia Fotográfica</h2>
             <img src="Foto circuito.jpeg" alt="Foto del circuito" class="foto-semana">
             <div class="texto-semana">
                 <p>
                     Circuito Semana 3
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque 4: NUEVO ESPACIO PARA 2 VIDEOS -->
+        <div class="semana">
+            <h2>Galería de Videos</h2>
+            <div class="videos-dobles">
+                <video class="video-semana" controls>
+                    <source src="Video1.mp4" type="video/mp4">
+                </video>
+                <video class="video-semana" controls>
+                    <source src="Video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="texto-semana">
+                <p>
+                    Aquí se muestran dos videos adicionales de la práctica.
                 </p>
             </div>
         </div>
